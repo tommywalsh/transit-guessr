@@ -4,8 +4,8 @@
 
 Transit Guessr is a GeoGuessr-style game for subway systems.
 
-It was initiall just NYC, but has been refactored to support multiple subway
-systems (currently Boston is the only other system, but more are on the way.)
+It was initially just NYC, but has been refactored to support multiple subway
+systems (currently Boston and Montreal are the only other systems, but more are on the way.)
 
 There are essentially two apps running in this repo:
 
@@ -21,7 +21,8 @@ Data](https://data.cityofnewyork.us/Transportation/Subway-Stations/arq3-7z49).
 For Boston, I used the publicly-available data and had the help of twitter user
 [@2urbaneric1](https://twitter.com/2urbaneric1) to get the data into the correct
 format. That data is stored
-[here](https://docs.google.com/spreadsheets/d/1bxJ7ftl-Ia0HmFglvWSOCL6lmtRHtANxBw3VgcCVrco/edit?usp=sharing)
+[here](https://docs.google.com/spreadsheets/d/1bxJ7ftl-Ia0HmFglvWSOCL6lmtRHtANxBw3VgcCVrco/edit?usp=sharing).
+Montreal data was gleaned from a query on [OpenStreetMap](https://www.openstreetmap.org/query) data.
 
 This is not an ideal data pipeline, but any sort of automated system felt like
 overkill.
@@ -49,16 +50,15 @@ to your new token.
 There are no tests, just manual testing.
 
 The transit operator that the game is played with is controlled using the
-`REACT_APP_TRANSITGUESSR_OPERATOR` env var. Current valid values are `mta` and
-`mbta'
+`REACT_APP_TRANSITGUESSR_OPERATOR` env var. Current valid values are `mta`, `mbta` and `stm`.
 
 ## Contributing
 
-Feel free to contibute any change! If you feel like making a contribution, some
+Feel free to contribute any change! If you feel like making a contribution, some
 things I want to add are:
 
 1. Different "levels" (hard = no parks, easy = shows streets)
 2. More transit lines (Staten Island, LIRR, etc.)
 3. Perhaps different transit agencies!
-4. Any sorts of CSS or react improvments. These aren't my area of expertise so
+4. Any sorts of CSS or react improvements. These aren't my area of expertise so
    lots of the code here is pretty bad

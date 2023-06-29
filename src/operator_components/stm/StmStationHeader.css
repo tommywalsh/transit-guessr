@@ -1,0 +1,18 @@
+.station-heading.stm {
+  background-color: #222222;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.system-logo.stm {
+  width: 5em;
+}
+
+.station-name.stm {
+  color: #dddddd;
+  font-family: "Transit", sans-serif;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 2em;
+}

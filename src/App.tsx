@@ -13,7 +13,7 @@ declare global {
   interface Window {
     sentryDsn?: string;
     firebaseConfig?: FirebaseOptions;
-    operator: "mbta" | "mta";
+    operator: "mbta" | "mta" | "stm";
   }
 }
 
